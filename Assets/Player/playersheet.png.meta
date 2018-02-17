@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: 282debbb08635e943b635bd77dd1076a
+timeCreated: 1518808153
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: playersheet_0
+    21300002: playersheet_1
+    21300004: playersheet_2
+    21300006: playersheet_3
+    21300008: playersheet_4
+    21300010: playersheet_5
+    21300012: playersheet_6
+    21300014: playersheet_7
+    21300016: playersheet_8
+    21300018: playersheet_9
+    21300020: playersheet_10
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playersheet_0
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 272
+        width: 196
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 47, y: 116}
+        - {x: -45, y: 116}
+        - {x: -82, y: 84}
+        - {x: -82, y: -78}
+        - {x: -35, y: -116}
+        - {x: 81, y: -116}
+        - {x: 98, y: -55}
+        - {x: 98, y: 90}
+        - {x: 95, y: 99}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playersheet_1
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 485
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 19}
+        - {x: -14, y: -11}
+        - {x: -14, y: -19}
+        - {x: 14, y: -19}
+        - {x: 14, y: 19}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playersheet_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 416
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -13, y: -15}
+        - {x: -11, y: -16}
+        - {x: 13, y: -16}
+        - {x: 13, y: 14}
+        - {x: 12, y: 16}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playersheet_3
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 416
+        width: 76
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 16}
+        - {x: -36, y: 12}
+        - {x: -36, y: -10}
+        - {x: -34, y: -16}
+        - {x: -7, y: -16}
+        - {x: -6, y: -12}
+        - {x: -6, y: 13}
+        - {x: -11, y: 16}
+      - - {x: 13, y: 16}
+        - {x: 9, y: 14}
+        - {x: 9, y: -8}
+        - {x: 12, y: -16}
+        - {x: 35, y: -16}
+        - {x: 38, y: -15}
+        - {x: 38, y: 14}
+        - {x: 37, y: 16}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playersheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 226
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 21}
+        - {x: -22.5, y: 4}
+        - {x: 3.5, y: -21}
+        - {x: 22.5, y: -21}
+        - {x: 22.5, y: 21}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playersheet_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 100
+        width: 203
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -101.5, y: 86.5}
+        - {x: -101.5, y: -36.5}
+        - {x: -86.5, y: -86.5}
+        - {x: 90.5, y: -86.5}
+        - {x: 101.5, y: 10.5}
+        - {x: 101.5, y: 86.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playersheet_6
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 230
+        width: 72
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: 9.5}
+        - {x: -36, y: -9.5}
+        - {x: 36, y: -9.5}
+        - {x: 36, y: 9.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playersheet_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 153
+        width: 38
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 10}
+        - {x: -19, y: -10}
+        - {x: 19, y: -10}
+        - {x: 19, y: 10}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playersheet_8
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 171
+        width: 72
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: 9.5}
+        - {x: -36, y: -9.5}
+        - {x: 36, y: -9.5}
+        - {x: 36, y: 9.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playersheet_9
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 57
+        width: 17
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 37.5}
+        - {x: -8.5, y: -37.5}
+        - {x: 8.5, y: -37.5}
+        - {x: 8.5, y: 37.5}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playersheet_10
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 120
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60, y: 69.5}
+        - {x: -60, y: 69.5}
+        - {x: -60, y: -69.5}
+        - {x: 60, y: -69.5}
+      physicsShape: []
+      tessellationDetail: 0
+    outline:
+    - - {x: 270, y: -122.5}
+      - {x: 268, y: -120.5}
+      - {x: 148, y: -120.5}
+      - {x: 146, y: -122.5}
+      - {x: 146, y: -261.5}
+      - {x: 270, y: -261.5}
+    - - {x: 59, y: -128.5}
+      - {x: 59, y: -206.5}
+      - {x: 80, y: -206.5}
+      - {x: 80, y: -129.5}
+      - {x: 78, y: -127.5}
+      - {x: 61, y: -127.5}
+    - - {x: -57, y: 13.5}
+      - {x: -127, y: 13.5}
+      - {x: -213, y: 6.5}
+      - {x: -213, y: -47.5}
+      - {x: -211, y: -49.5}
+      - {x: -152, y: -163.5}
+      - {x: -26, y: -163.5}
+      - {x: -6, y: -63.5}
+      - {x: -6, y: 8.5}
+    - - {x: -254, y: -86.5}
+      - {x: -254, y: -110.5}
+      - {x: -212, y: -110.5}
+      - {x: -212, y: -86.5}
+    - - {x: 57, y: -69.5}
+      - {x: 57, y: -92.5}
+      - {x: 133, y: -92.5}
+      - {x: 133, y: -69.5}
+    - - {x: -292, y: 8.5}
+      - {x: -292, y: -13.5}
+      - {x: -282, y: -37.5}
+      - {x: -247, y: -37.5}
+      - {x: -245, y: -35.5}
+      - {x: -245, y: 6.5}
+      - {x: -247, y: 8.5}
+    - - {x: 60, y: -10.5}
+      - {x: 60, y: -33.5}
+      - {x: 136, y: -33.5}
+      - {x: 136, y: -10.5}
+    - - {x: 292, y: 163.5}
+      - {x: 280, y: 200.5}
+      - {x: 256, y: 238.5}
+      - {x: 226, y: 244.5}
+      - {x: 173, y: 244.5}
+      - {x: 156, y: 232.5}
+      - {x: 124, y: 201.5}
+      - {x: 112, y: 155.5}
+      - {x: 112, y: 91.5}
+      - {x: 125, y: 54.5}
+      - {x: 155, y: 22.5}
+      - {x: 181, y: 8.5}
+      - {x: 226, y: 8.5}
+      - {x: 243, y: 15.5}
+      - {x: 280, y: 51.5}
+      - {x: 292, y: 86.5}
+    - - {x: 6, y: 102.5}
+      - {x: 4, y: 100.5}
+      - {x: 4, y: 97.5}
+      - {x: 6, y: 95.5}
+      - {x: 53, y: 95.5}
+      - {x: 55, y: 97.5}
+      - {x: 55, y: 100.5}
+      - {x: 53, y: 102.5}
+    - - {x: -136, y: 188.5}
+      - {x: -143, y: 180.5}
+      - {x: -143, y: 162.5}
+      - {x: -137, y: 152.5}
+      - {x: -117, y: 152.5}
+      - {x: -113, y: 153.5}
+      - {x: -113, y: 183.5}
+      - {x: -122, y: 188.5}
+    - - {x: -89, y: 188.5}
+      - {x: -98, y: 180.5}
+      - {x: -98, y: 162.5}
+      - {x: -95, y: 152.5}
+      - {x: -75, y: 152.5}
+      - {x: -67, y: 154.5}
+      - {x: -67, y: 178.5}
+      - {x: -75, y: 188.5}
+    - - {x: 59, y: 261.5}
+      - {x: 39, y: 230.5}
+      - {x: 39, y: 225.5}
+      - {x: 40, y: 222.5}
+      - {x: 62, y: 221.5}
+      - {x: 70, y: 221.5}
+      - {x: 71, y: 222.5}
+      - {x: 71, y: 253.5}
+      - {x: 69, y: 261.5}
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
