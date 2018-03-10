@@ -12,10 +12,10 @@ public class Boundary
 
 public class PlayerController : MonoBehaviour
 {
-    private Rigidbody rb;
+   // private Rigidbody rb;
     public float speed;
     public float playerSpeed;
-    //public Boundary boundary;
+   // public Boundary boundary;
 
     public GameObject shot;
     public Transform shotspawn;
@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+       // rb = GetComponent<Rigidbody>();
     }
 
     void Update()
