@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 400012}
   - component: {fileID: 19800012}
   - component: {fileID: 19900012}
-  - component: {fileID: 114117068348971524}
+  - component: {fileID: 114985034215486642}
   m_Layer: 0
   m_Name: explosion_enemy
   m_TagString: Untagged
@@ -20678,7 +20678,7 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100012}
   m_IsPrefabParent: 1
---- !u!114 &114117068348971524
+--- !u!114 &114985034215486642
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -20686,7 +20686,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a1584a572de69c449f66194f9a5bba7, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c04cf236f8450d46a4edb5bacdeab2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 2
