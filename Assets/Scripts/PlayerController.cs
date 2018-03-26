@@ -4,18 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Playables;
 
-/*[System.Serializable]
+[System.Serializable]
 public class Boundary
 {
     public float xMin, xMax, zMin, zMax;
-}*/
+}
 
 public class PlayerController : MonoBehaviour
 {
-   // private Rigidbody rb;
-    public float speed;
+    private Rigidbody rb;
+    private AudioSource audio;
     public float playerSpeed;
-   // public Boundary boundary;
+    public Boundary boundary;
 
     public GameObject shot;
     public Transform shotspawn;
@@ -25,7 +25,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-       // rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
+        audio = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -34,6 +35,7 @@ public class PlayerController : MonoBehaviour
         {
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotspawn.position, shotspawn.rotation);
+            audio.Play();
         }
     }
 
@@ -45,16 +47,11 @@ public class PlayerController : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
         transform.Translate(0, playerSpeed * Time.deltaTime * moveVertical, 0);
 
-        //Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        //rb.velocity = movement * speed;
-
-        /*rb.position = new Vector3
+        rb.position = new Vector3
         (
-            Mathf.Clamp(rb.position.x, boundary.xMin, boundary.xMax),
-            0.0f,
-            Mathf.Clamp(rb.position.z, boundary.zMin, boundary.zMax)
-         );*/
-
-        //rb.rotation = Quaternion.Euler(0.0f, 0.0f, rb.velocity.x);
+             Mathf.Clamp(rb.position.x, boundary.xMin, boundary.xMax),
+             0.0f,
+             Mathf.Clamp(rb.position.z, boundary.zMax, boundary.zMin)
+        );
     }
 }
