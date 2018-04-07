@@ -21,9 +21,11 @@ public class GameController : MonoBehaviour
 
     private bool gameOver;
     private bool restart;
+    private Animator anim;
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         gameOver = false;
         restart = false;
         restartText.text = "";
@@ -34,6 +36,11 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
+       if(gameOver && !restart)
+       {
+         anim.SetTrigger("GameOver");
+       }
+
        if(restart)
         {
             if(Input.GetKeyDown(KeyCode.R))
