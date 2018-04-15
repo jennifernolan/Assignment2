@@ -1,11 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DestroyByContact : MonoBehaviour
 {
-    public GameObject explosion;
     public GameObject playerExplosion;
+    public GameObject explosion;
     public int scoreValue;
     private GameController gameController;
 
@@ -28,14 +29,11 @@ public class DestroyByContact : MonoBehaviour
         {
             return;
         }
-        Instantiate(explosion, transform.position, transform.rotation);
-        if (other.tag == "Player")
+        if(other.tag == "Bolt")
         {
-            Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
-            gameController.GameOver();
+            Instantiate(explosion, transform.position, transform.rotation);
+            gameController.AddScore(scoreValue);
+            Destroy(gameObject);
         }
-        gameController.AddScore(scoreValue);
-        Destroy(other.gameObject);
-        Destroy(gameObject);
     }
 }
