@@ -13,13 +13,14 @@ public class PlayerHealth : MonoBehaviour
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
 
     public GameObject playerExplosion;
+    public GameObject playerHurt;
     bool isDead;
     bool damaged;
     private GameController gameController;
 
     public void Start ()
     {
-        currentHealth = startingHealth;
+        currentHealth = startingHealth + 10;
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");
         if (gameControllerObject != null)
         {
@@ -29,15 +30,15 @@ public class PlayerHealth : MonoBehaviour
 
     void Update ()
     {
-        if(damaged)
-        {
+         if (damaged)
+         {
             damageImage.color = flashColour;
-        }
-        else
-        {
-            damageImage.color = Color.Lerp (damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
-        }
-        damaged = false;
+         }
+         else
+         {
+             damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
+         }
+         damaged = false;
     }
 
 
@@ -55,6 +56,11 @@ public class PlayerHealth : MonoBehaviour
             Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
             Destroy(gameObject);
             gameController.GameOver();
+        }
+        if(currentHealth != 0)
+        {
+            other.tag = "Player";
+            Instantiate(playerHurt, other.transform.position, other.transform.rotation);
         }
     }
 }
