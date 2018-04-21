@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour
         restart = false;
         restartText.text = "";
         gameOverText.text = "";
-        StartCoroutine(SpawnWaves());
+        StartCoroutine(SpawnWaves());// used with the yield(paused using yield and resumed using yield return) in the Ienumerator Spawnwaves
         UpdateScore();
     }
 
@@ -38,35 +38,35 @@ public class GameController : MonoBehaviour
     {
        if(gameOver && !restart)
        {
-         anim.SetTrigger("GameOver");
+         anim.SetTrigger("GameOver");//set the trigger for the gameover animation (blue screen with black writing)
        }
 
        if(restart)
         {
-            if(Input.GetKeyDown(KeyCode.R))
+            if(Input.GetKeyDown(KeyCode.R))//if the player hits the r key to restart the game
             {
-                SceneManager.LoadScene("_Scene");
+                SceneManager.LoadScene("_Scene");//reload the scene
             }
         }
     }
 
     IEnumerator SpawnWaves()
     {
-        yield return new WaitForSeconds(startWait);
+        yield return new WaitForSeconds(startWait);//wait for a coupe of seconds before spawning spiders
         while(true)
         {
             for(int i = 0; i < hazardCount; i++)
             {
-                Vector3 spawnPosition = new Vector3(spawnValues.x, spawnValues.y, Random.Range(-spawnValues.z, spawnValues.z));
-                Quaternion spawnRotation = Quaternion.identity;
-                Instantiate(spider, spawnPosition, spawnRotation);
+                Vector3 spawnPosition = new Vector3(spawnValues.x, spawnValues.y, Random.Range(-spawnValues.z, spawnValues.z));//spawn the spiders from random points on the screen on the left hand side
+                Quaternion spawnRotation = Quaternion.identity;//represent rotation
+                Instantiate(spider, spawnPosition, spawnRotation);//clones the spider
                 yield return new WaitForSeconds(spawnWait);
             }
-            yield return new WaitForSeconds(waveWait);
+            yield return new WaitForSeconds(waveWait);//wait for a few seconds between spawns
 
-            if(gameOver)
+            if(gameOver)//if the game is over
             {
-                restartText.text = "Press 'R' for Restart";
+                restartText.text = "Press 'R' for Restart";//display the restart text
                 restart = true;
                 break;
             }
@@ -75,16 +75,16 @@ public class GameController : MonoBehaviour
 
     public void AddScore(int newScoreValue)
     {
-        score += newScoreValue;
+        score += newScoreValue;//add the score from the destroy by contact script from the on trigger enter method
         UpdateScore();
     }
 
-    void UpdateScore()
+    void UpdateScore()//display the score on screen to the player
     {
         scoreText.text = "Score: " + score.ToString();
     }
 
-    public void GameOver()
+    public void GameOver()//game over text to appear when the game is over
     {
         gameOverText.text = "Game Over!";
         gameOver = true;

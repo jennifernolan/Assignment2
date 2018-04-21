@@ -10,7 +10,7 @@ public class Mover : MonoBehaviour
 	void Start ()
     {
         rb = GetComponent<Rigidbody>();
-        rb.velocity = -transform.right * speed;
+        rb.velocity = -transform.right * speed;//the speed at which the spiders move
 	}
 
 }
