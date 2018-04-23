@@ -11,7 +11,7 @@ Jennifer Nolan C16517636
 
 YouTube Link
 ------------
-[![YouTube](http://img.youtube.com/vi/1Rwb8da_Eu/0.jpg)]( https://www.youtube.com/watch?v=1Rwb8da_Eu8&feature=youtu.be)
+[![YouTube](http://img.youtube.com/vi/1Rwb8da_Eu8/0.jpg)]( https://www.youtube.com/watch?v=1Rwb8da_Eu8&feature=youtu.be)
 
 Description of Project
 ----------------------
