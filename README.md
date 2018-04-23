@@ -10,6 +10,7 @@ Members
 Jennifer Nolan C16517636
 
 YouTube Link
+------------
 
 Description of Project
 ----------------------
